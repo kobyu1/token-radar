@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar — pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#board">Skip to the board</a>
+<header class="top">
+  <div class="brand">
+    <span class="mark" aria-hidden="true">◉</span>
+    <div>
+      <h1>Token Radar</h1>
+      <p class="tag">Pre-token protocols, ranked by what a token would be worth</p>
+    </div>
+  </div>
+  <p class="asof" id="asof"></p>
+</header>
+<nav class="views" id="views" aria-label="Views">
+  <button type="button" data-view="board" class="active">Board</button>
+  <button type="button" data-view="live">Live tokens</button>
+  <button type="button" data-view="model">Model &amp; method</button>
+</nav>
+<main id="board" tabindex="-1"></main>
+<section id="detail" class="detail" hidden></section>
+<footer class="foot" id="foot"></footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
